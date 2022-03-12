@@ -3,4 +3,8 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'blog_posts.html', {})
+    return render(request, 'home.html', {})
+
+
+def contact(request):
+    return render(request, 'contact.html', {})
