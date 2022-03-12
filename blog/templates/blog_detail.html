@@ -8,11 +8,16 @@
 <p>{{ post.intro }}</p>
 <p>{{ post.text }}</p>
 <p>{{ post.text_end }}</p>
-<hr>
 <img src="{{ post.image1 }}" />
 
-<p style="margin-top: 100px;">
-<a href="{% url 'blog' %}"><-- Back</a>
-</p>
+<!--<p style="margin-top: 100px;">-->
+<hr>
+<a href="{% url 'blog' %}">
+<button class="btn waves-effect blue darken-2" type="button" name="back">
+    <i class="material-icons left">chevron_left</i>
+    Back
+</button>
+</a>
+<!--</p>-->
 
 {% endblock %}

@@ -4,12 +4,12 @@ from django.views.generic import ListView, DetailView
 from .models import Post
 
 # def home(request):
-#     return render(request, 'home.html', {})
+#     return render(request, 'blog_posts.html', {})
 
 
 class HomeView(ListView):
     model = Post
-    template_name = 'home.html'
+    template_name = 'blog_posts.html'
 
 
 class BlogDetailView(DetailView):
