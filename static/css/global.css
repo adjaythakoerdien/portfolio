@@ -1,0 +1,26 @@
+.profile {
+    width: 100%;
+    min-height: 40vh;
+    top: 0;
+    left: 0;
+}
+
+.profile-image {
+    max-width: 300px;
+}
+
+.profile-card {
+    min-height: 200px;
+}
+
+.profile-text {
+    padding: 45px;
+}
+
+.profile-header {
+    display: flex;
+}
+
+.border-radius {
+    border-radius: 5px;
+}
