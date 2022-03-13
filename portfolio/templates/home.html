@@ -4,28 +4,27 @@
 
 {% load static %}
 
-
-<section class="card light-blue darken-2 border-radius">
-    <div class="card-content white-text profile-card">
-        <div class="row profile-header">
-        <div class="hide-on-med-and-down col l s5">
+<main class="card light-blue darken-2">
+    <div class="container card-content white-text">
+        <div class="row">
+        <div class="row col l4 m4 s12">
             <img
-                    src="{% static 'profile.jpeg' %}"
-                    class="profile-image border-radius"
-                    alt="adjay thakoerdien">
+                src="{% static 'profile.jpeg' %}"
+                class="border-radius responsive-img"
+                alt="adjay thakoerdien">
         </div>
-        <div class="col  offset-s0 offset-m1 offset-l0 s12 m12">
-            <h3>Adjay Thakoerdien</h3>
+        <div class="col l8 m8 s12">
+            <h2>Adjay Thakoerdien</h2>
             <p>
                 Enthusiastic and ambitious full-stack software engineer with a passion for data science and machine learning.
-
+                ...
             </p>
         </div>
     </div>
     <div class="card-action right-align">
         <a href="#" class="white-text">Download resume</a>
     </div>
+</main>
 
-</section>
 
 {% endblock %}
