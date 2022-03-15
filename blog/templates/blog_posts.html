@@ -1,21 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<main class="container">
+    <h1>BLOGPOST</h1>
+</main>
+<section class="container">
+    <ul>
+    {% for post in object_list  %}
 
-<h1>BLOGPOST</h1>
+        <li><a href="{% url 'blogpost' post.pk %}">
+                {{ post.title }}
+        </a> -
+                {{ post.author }} |
+                {{ post.description }}
 
-<ul>
-{% for post in object_list  %}
-
-    <li><a href="{% url 'blogpost' post.pk %}">
-            {{ post.title }}
-    </a> -
-            {{ post.author }} |
-            {{ post.description }}
-
-    </li>
-
-{% endfor %}
+        </li>
+    {% endfor %}
     </ul>
+</section>
 
 {% endblock %}
