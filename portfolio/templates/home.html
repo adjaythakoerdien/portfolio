@@ -35,11 +35,13 @@
         <div class="col s12 m12 l4">
               <div class="card-panel center-align" style="height:250px;">
                   <h5>Data</h5>
-                    <ul>
+                  <div class="row">
+                      <ul>
                        {% for skill in skill_data %}
-                        <li class="grey-text text-darken-3">{{ skill.skill }}</li>
+                        <li class="grey-text text-darken-3 col s4 m4 l4"><img width="50" height="50" src="{{ skill.image.url }}" alt="{{ skill.skill }}"></li>
                         {% endfor %}
                     </ul>
+                  </div>
               </div>
         </div>
         <div class="col s12 m12 l4">

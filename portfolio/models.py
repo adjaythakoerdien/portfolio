@@ -7,6 +7,7 @@ class Intro(models.Model):
 
 class SkillData(models.Model):
     skill = models.CharField(max_length=100)
+    image = models.ImageField(null=True, blank=True, upload_to="images/")
     number = models.CharField(max_length=250)
 
     def __str__(self):
@@ -15,6 +16,7 @@ class SkillData(models.Model):
 
 class SkillWeb(models.Model):
     skill = models.CharField(max_length=100)
+    image = models.ImageField(null=True, blank=True, upload_to="images/")
     number = models.CharField(max_length=250)
 
     def __str__(self):
@@ -23,6 +25,7 @@ class SkillWeb(models.Model):
 
 class SkillOther(models.Model):
     skill = models.CharField(max_length=100)
+    image = models.ImageField(null=True, blank=True, upload_to="images/")
     number = models.CharField(max_length=250)
 
     def __str__(self):
