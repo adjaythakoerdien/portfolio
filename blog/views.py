@@ -4,7 +4,7 @@ from django.views.generic import ListView, DetailView
 from .models import Post
 
 # def home(request):
-#     return render(request, 'blog_posts.html', {})
+#     return render(request, 'projects_all.html', {})
 
 
 class HomeView(ListView):
