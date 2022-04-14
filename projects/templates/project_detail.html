@@ -16,6 +16,10 @@
 
 <section class="container">
 <!--    <h6>{{ project.date }}</h6>-->
+
+    <img style="margin: 20px 0;" class="responsive-img" src="{{ project.image1.url }}" />
+
+
     <div style="margin: 20px 0;">
         {{ project.intro }}
     </div>
@@ -24,17 +28,33 @@
 
     <div>
         {{ project.text }}
+
+        {% if project.image2 %}
+        <img style="margin: 20px 0;" class="responsive-img" src="{{ project.image2.url }}" />
+        {% endif %}
+
     </div>
 
     <div class="divider"  style="margin:20px 0;"></div>
 
     <div>
+        <h3>Technologies</h3>
         {{ project.technologies }}
     </div>
 
-    <img class="responsive" src="{{ project.image1.url }}" />
 
-    <img class="responsive" src="{{ project.image2.url }}" />
+
+
+    {% if project.text_end %}
+
+    <div class="divider"  style="margin:20px 0;"></div>
+
+
+    <div style="margin: 20px 0;">
+        {{ project.text_end }}
+    </div>
+
+    {% endif %}
 
 
 </section>
