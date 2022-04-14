@@ -11,17 +11,27 @@
 </main>
 
 <section class="container">
-    <p>{{ post.intro }}</p>
-    <p>{{ post.text }}</p>
-    <p>{{ post.text_end }}</p>
-    <img src="{{ post.image1 }}" />
+    <img style="margin: 30px 0;" class="responsive-img" src="{{ post.image1.url }}" />
 
-    <!--<p style="margin-top: 100px;">-->
-    <hr>
+    <div style="margin: 30px 0;" class="divider"></div>
+
+    <p style="margin: 30px 0;">{{ post.intro }}</p>
+
+    <div style="margin: 30px 0;" class="divider"></div>
+
+    <p style="margin: 30px 0;">{{ post.text }}</p>
+
+    <div style="margin: 30px 0;" class="divider"></div>
+
+    <p style="margin: 30px 0;">{{ post.text_end }}</p>
+
+
+
+    <div style="margin: 30px 0;" class="divider"></div>
     <a href="{% url 'blog' %}">
     <button class="btn waves-effect blue darken-2" type="button" name="back">
         <i class="material-icons left">chevron_left</i>
-        Back
+        Blog
     </button>
     </a>
 </section>

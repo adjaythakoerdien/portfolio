@@ -14,6 +14,10 @@ class Post(models.Model):
     text_end = models.TextField(blank=True)
     url = models.TextField(blank=True, max_length=250)
     image1 = models.ImageField(null=True, blank=True, upload_to="images/")
+    image2 = models.ImageField(null=True, blank=True, upload_to="images/")
+    image3 = models.ImageField(null=True, blank=True, upload_to="images/")
+    image4= models.ImageField(null=True, blank=True, upload_to="images/")
+    image5 = models.ImageField(null=True, blank=True, upload_to="images/")
 
     def __str__(self):
         return self.title + ' | ' + str(self.author)

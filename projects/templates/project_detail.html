@@ -17,25 +17,25 @@
 <section class="container">
 <!--    <h6>{{ project.date }}</h6>-->
 
-    <img style="margin: 20px 0;" class="responsive-img" src="{{ project.image1.url }}" />
+    <img style="margin: 30px 0;" class="responsive-img" src="{{ project.image1.url }}" />
 
 
-    <div style="margin: 20px 0;">
+    <div style="margin: 30px 0;">
         {{ project.intro }}
     </div>
 
-    <div class="divider" style="margin:20px 0;"></div>
+    <div class="divider" style="margin:30px 0;"></div>
 
     <div>
         {{ project.text }}
 
         {% if project.image2 %}
-        <img style="margin: 20px 0;" class="responsive-img" src="{{ project.image2.url }}" />
+        <img style="margin: 30px 0;" class="responsive-img" src="{{ project.image2.url }}" />
         {% endif %}
 
     </div>
 
-    <div class="divider"  style="margin:20px 0;"></div>
+    <div class="divider"  style="margin:30px 0;"></div>
 
     <div>
         <h3>Technologies</h3>
@@ -47,16 +47,26 @@
 
     {% if project.text_end %}
 
-    <div class="divider"  style="margin:20px 0;"></div>
+    <div class="divider"  style="margin:30px 0;"></div>
 
 
-    <div style="margin: 20px 0;">
+    <div style="margin: 30px 0;">
         {{ project.text_end }}
     </div>
 
     {% endif %}
 
+    <div style="margin: 30px 0;" class="divider"></div>
+
+    <a href="{% url 'projects' %}">
+    <button class="btn waves-effect blue darken-2" type="button" name="back">
+        <i class="material-icons left">chevron_left</i>
+        Projects
+    </button>
+    </a>
 
 </section>
+
+
 
 {% endblock %}
