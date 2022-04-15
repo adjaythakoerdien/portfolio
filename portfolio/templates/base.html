@@ -17,7 +17,9 @@
   </head>
   <body>
   <nav class="nav-wrapper blue darken-2">
-    <a href="#" class="brand-logo">Logo</a>
+    <a href="{% url 'home' %}" class="brand-logo" style="padding-left:1em;">
+        <img src="{% static 'python.webp' %}" width="32" height="32" />
+    </a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a class="grey-text text-lighten-3" href="{% url 'home' %}">About me</a></li>
       <li><a class="grey-text text-lighten-3" href="{% url 'projects' %}">Projects</a></li>

@@ -33,35 +33,36 @@
     <h3 class="center-align">SKILLS</h3>
     <div class="row">
         <div class="col s12 m12 l4">
-              <div class="card-panel center-align" style="height:300px;">
+              <div class="card-panel center-align">
                   <h5>Data</h5>
                   <div class="row">
                       <ul>
                        {% for skill in skill_data %}
-                        <li class="grey-text text-darken-3 col s4 m4 l4"><img title="{{ skill.skill }}" width="50" height="50" src="{{ skill.image.url }}" alt="{{ skill.skill }}"></li>
+                        <li class="skill_img col s4 m4 l4" style="padding:1em;"><img title="{{ skill.skill }}" class="responsive-img" src="{{ skill.image.url }}" alt="{{ skill.skill }}"></li>
                         {% endfor %}
                     </ul>
                   </div>
               </div>
         </div>
         <div class="col s12 m12 l4">
-              <div class="card-panel center-align" style="height:300px;">
+              <div class="card-panel center-align">
                   <h5>Web</h5>
-                    <ul>
+
+                    <ul class="row">
                        {% for skill in skill_web %}
-                        <li class="grey-text text-darken-3 col s4 m4 l4"><img title="{{ skill.skill }}" width="50" height="50" src="{{ skill.image.url }}" alt="{{ skill.skill }}"></li>
+                        <li class="col s4 m4 l4 skill_img" style="padding:1em;">
+                            <img title="{{ skill.skill }}" class="responsive-img" src="{{ skill.image.url }}" alt="{{ skill.skill }}">
+                        </li>
                         {% endfor %}
                     </ul>
-                      <br>
-                      <br>
               </div>
         </div>
         <div class="col s12 m12 l4">
-              <div class="card-panel center-align" style="height:300px;">
+              <div class="card-panel center-align">
                   <h5>Other</h5>
-                    <ul>
+                    <ul class="row">
                        {% for skill in skill_other %}
-                        <li class="grey-text text-darken-3 col s4 m4 l4"><img title="{{ skill.skill }}" width="50" height="50" src="{{ skill.image.url }}" alt="{{ skill.skill }}"></li>
+                        <li class="col s4 m4 l4  skill_img" style="padding:1em;"><img title="{{ skill.skill }}" class="responsive-img" src="{{ skill.image.url }}" alt="{{ skill.skill }}"></li>
                         {% endfor %}
                     </ul>
               </div>
