@@ -38,7 +38,9 @@
                   <div class="row">
                       <ul>
                        {% for skill in skill_data %}
-                        <li class="col s4 m4 l4 tooltipped" data-position="top" data-tooltip="{{ skill.skill }}" style="padding:1em;"><img title="{{ skill.skill }}" class="responsive-img" src="{{ skill.image.url }}" alt="{{ skill.skill }}"></li>
+                        <li class="col s4 m4 l4 tooltipped skill" data-position="top" data-tooltip="{{ skill.skill }}" style="padding:1em;">
+                            <img class="responsive-img" src="{{ skill.image.url }}" alt="{{ skill.skill }}">
+                        </li>
                         {% endfor %}
                     </ul>
 
@@ -51,8 +53,8 @@
 
                     <ul class="row">
                        {% for skill in skill_web %}
-                       <li class="col s4 m4 l4 tooltipped" data-position="top" data-tooltip="{{ skill.skill }}" style="padding:1em;">
-                           <img title="{{ skill.skill }}" class="responsive-img" src="{{ skill.image.url }}" alt="{{ skill.skill }}">
+                       <li class="col s4 m4 l4 tooltipped skill" data-position="top" data-tooltip="{{ skill.skill }}" style="padding:1em;">
+                           <img class="responsive-img" src="{{ skill.image.url }}" alt="{{ skill.skill }}">
                        </li>
                         {% endfor %}
                     </ul>
@@ -63,8 +65,8 @@
                   <h5>Other</h5>
                     <ul class="row">
                        {% for skill in skill_other %}
-                        <li class="col s4 m4 l4 tooltipped" data-position="top" data-tooltip="{{ skill.skill }}" style="padding:1em;">
-                           <img title="{{ skill.skill }}" class="responsive-img" src="{{ skill.image.url }}" alt="{{ skill.skill }}">
+                        <li class="col s4 m4 l4 tooltipped skill" data-position="top" data-tooltip="{{ skill.skill }}" style="padding:1em;">
+                           <img class="responsive-img" src="{{ skill.image.url }}" alt="{{ skill.skill }}">
                        </li>
                         {% endfor %}
                     </ul>
@@ -80,7 +82,7 @@
         <div class="col s12 m12 l4">
              <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="{{ project.image1.url }}">
+                  <img alt="{{ project.title}}" class="activator" src="{{ project.image1.url }}">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">{{ project.title }}<i class="material-icons right">more_vert</i></span>

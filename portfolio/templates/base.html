@@ -67,7 +67,10 @@
   <script>
         document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.tooltipped');
-    M.Tooltip.init(elems);
+    M.Tooltip.init(elems, {
+        margin: -20,
+        transitionMovement: 3
+    });
   });
 
   </script>

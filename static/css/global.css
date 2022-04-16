@@ -11,3 +11,7 @@ footer {
     margin-top: 100px;
 }
 
+.material-tooltip {
+    background-color:transparent;
+    color: black;
+}
