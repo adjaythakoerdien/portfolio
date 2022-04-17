@@ -1,6 +1,9 @@
 .profile-section {
     margin-top: -10px;
     padding-top: 20px;
+    /*background-image: url('/media/images//header/01.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h3 {
