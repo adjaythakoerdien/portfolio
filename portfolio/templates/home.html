@@ -16,14 +16,23 @@
         <div class="col l8 m8 s12">
             <h2 class="white-text">Adjay Thakoerdien</h2>
             <p class="grey-text text-lighten-4">
-                Enthusiastic and ambitious full-stack software engineer with a passion for
-                data science and machine learning.
-                ...
+                Enthusiastic and ambitious data engineer with a passion for
+                software development. Passionate for storytelling with data with the help of machine learning.
+                Proficient in software development frameworks like Angular.
+                Curious about my skills? Take a look at my projects!
             </p>
         </div>
     </div>
     <div class="card-action right-align">
-        <a href="#" class="white-text">Download resume</a>
+{#        <a href="#projects">#}
+{#            <button#}
+{#                class="waves-effect waves-light btn amber darken-4 white-text"#}
+{#                style="border-radius:5px;">#}
+{#                Projects#}
+{#            </button>#}
+{#        </a>#}
+        <a href="#projects" class="white-text">Go to projects</a>
+{#        <a href="#" class="white-text">Download resume</a>#}
     </div>
 </main>
 
@@ -75,7 +84,7 @@
     </div>
 </section>
 
-<section class="container">
+<section id="projects" class="container">
     <h3 class="center-align">PROJECTS</h3>
     <div class="row">
         {% for project in projects %}

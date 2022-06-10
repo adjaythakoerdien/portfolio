@@ -1,9 +1,5 @@
-.profile-section {
-    margin-top: -10px;
-    padding-top: 20px;
-    /*background-image: url('/media/images//header/01.jpg');*/
-    background-repeat: no-repeat;
-    background-size: cover;
+html {
+  scroll-behavior: smooth;
 }
 
 h3 {
@@ -17,4 +13,12 @@ footer {
 .material-tooltip {
     background-color:transparent;
     color: black;
+}
+
+.profile-section {
+    margin-top: -10px;
+    padding-top: 20px;
+    /*background-image: url('/media/images//header/01.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
 }
